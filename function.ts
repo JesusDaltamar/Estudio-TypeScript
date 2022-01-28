@@ -15,3 +15,8 @@ function imprimir(): void {
 }
 
 imprimir();
+
+const throwError = (message:string) : never=>{
+    throw new Error (message);
+    return ""; //ESTA FUNCION NUNCA DEVULVE NADA (TIPO NEVER)
+};
