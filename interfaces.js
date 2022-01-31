@@ -8,9 +8,17 @@ var Role;
 var medico = {
     name: "Jesus",
     email: "Jesus@gmail.com",
-    role: Role.Asistente
+    role: Role.Asistente,
+    total: 25,
+    printCurrentBill: function () {
+        return "valor actual de la factura es de ";
+    }
 };
 var printStaff = function (staff) {
     console.log(staff);
 };
+var printCurrentBill = function (bill) {
+    console.log(bill.currentBill());
+};
 printStaff(medico);
+printCurrentBill(medico);
